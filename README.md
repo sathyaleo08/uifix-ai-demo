@@ -2,7 +2,7 @@
 
 A comprehensive React-based e-commerce application built for demonstrating automated UI fixes. This project contains intentionally injected bugs to showcase automated bug detection and resolution capabilities.
 
-## 🚀🚀🚀 Features
+## 🚀 Features
 
 - **User Authentication**: Login and signup functionality with form validation
 - **Image Carousel**: Auto-playing carousel on the login page
