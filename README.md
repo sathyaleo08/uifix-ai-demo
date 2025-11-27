@@ -2,7 +2,7 @@
 
 A comprehensive React-based e-commerce application built for demonstrating automated UI fixes. This project contains intentionally injected bugs to showcase automated bug detection and resolution capabilities.
 
-## 🚀 Features
+## 🚀🚀🚀 Features
 
 - **User Authentication**: Login and signup functionality with form validation
 - **Image Carousel**: Auto-playing carousel on the login page
@@ -64,6 +64,7 @@ ui-fix-demo/
 This project contains **3 intentionally injected bugs** marked with `UIFIX AI` comments:
 
 ### Bug #1: UI/UX Issue (CheckoutPage.jsx - Line 181)
+
 - **Type**: Missing Navigation Button
 - **Location**: `src/pages/CheckoutPage/CheckoutPage.jsx`
 - **Description**: Missing "Back to Cart" button on checkout page
@@ -71,6 +72,7 @@ This project contains **3 intentionally injected bugs** marked with `UIFIX AI` c
 - **Expected Fix**: Add a "Back to Cart" button with `variant="outline"`
 
 ### Bug #2: Style Issue (ProductDetailPage.jsx - Line 102)
+
 - **Type**: Incorrect Button Variant
 - **Location**: `src/pages/ProductDetailPage/ProductDetailPage.jsx`
 - **Description**: "Buy Now" button uses `variant="danger"` (red) instead of `variant="secondary"` (gray)
@@ -78,6 +80,7 @@ This project contains **3 intentionally injected bugs** marked with `UIFIX AI` c
 - **Expected Fix**: Change to `variant="secondary"`
 
 ### Bug #3: Logical Issue (CartPage.jsx - Line 115)
+
 - **Type**: Incorrect Calculation
 - **Location**: `src/pages/CartPage/CartPage.jsx`
 - **Description**: Tax calculation uses 0.5 (50%) instead of 0.1 (10%)
@@ -87,28 +90,33 @@ This project contains **3 intentionally injected bugs** marked with `UIFIX AI` c
 ## 🚦 Getting Started
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - npm or yarn
 
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Avneet-Kaur-Rai/ui-fix-demo.git
 cd ui-fix-demo
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
 
 4. Open your browser and navigate to:
+
 ```
 http://localhost:5173
 ```
@@ -123,6 +131,7 @@ http://localhost:5173
 ## 🔐 Demo Credentials
 
 Since this is a mock application, you can use any credentials:
+
 - **Email**: Any valid email format (e.g., demo@example.com)
 - **Password**: Any password (minimum 6 characters)
 
