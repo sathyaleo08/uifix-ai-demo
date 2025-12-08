@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 import { ROUTES } from '../../constants/routes';
+import { TAX_RATE } from '../../constants/enums';
 import { formatCurrency } from '../../utils/formatters';
 import Button from '../../components/common/Button/Button';
 import './CartPage.css';
@@ -101,7 +102,7 @@ const CartPage = () => {
                         </div>
                         <div className="summary-row">
                             <span>Tax (10%):</span>
-                            <span>{formatCurrency(getCartTotal() * 0.1)}</span>
+                            <span>{formatCurrency(getCartTotal() * TAX_RATE)}</span>
                         </div>
                         <div className="summary-divider"></div>
                         <div className="summary-row summary-total">
@@ -109,8 +110,8 @@ const CartPage = () => {
                             <span>
                                 {formatCurrency(
                                     getCartTotal() +
-                                    (getCartTotal() > 100 ? 0 : 10) +
-                                    getCartTotal() * 0.1
+                                        (getCartTotal() > 100 ? 0 : 10) +
+                                        getCartTotal() * TAX_RATE
                                 )}
                             </span>
                         </div>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 import { ROUTES } from '../../constants/routes';
-import { PAYMENT_METHODS } from '../../constants/enums';
+import { PAYMENT_METHODS, TAX_RATE } from '../../constants/enums';
 import { formatCurrency } from '../../utils/formatters';
 import { validateCardNumber, validateCVV } from '../../utils/validators';
 import Input from '../../components/common/Input/Input';
@@ -80,7 +80,7 @@ const PaymentPage = () => {
 
   const subtotal = getCartTotal();
   const shipping = subtotal > 100 ? 0 : 10;
-  const tax = subtotal * 0.1;
+  const tax = subtotal * TAX_RATE;
   const calculateGrandTotal = () => subtotal + shipping + tax;
 
   return (
